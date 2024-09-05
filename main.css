@@ -219,21 +219,3 @@ h1 {
 .card5 .card__test-story {
   color: #48556a;
 }
-
-.card5 .name__fullname {
-  color: #48556a;
-}
-
-.card5 .name__verify {
-  color: #48556a;
-  opacity: 50%;
-}
-
-.card5 .card__test-title {
-  color: #48556a;
-}
-
-.card5 .card__test-story {
-  color: #48556a;
-  opacity: 70%;
-}
