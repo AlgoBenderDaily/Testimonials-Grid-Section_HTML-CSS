@@ -219,3 +219,67 @@ h1 {
 .card5 .card__test-story {
   color: #48556a;
 }
+
+@media screen and (min-width: 992px) {
+  /* || MAIN */
+  .main {
+    margin: 164px 165px;
+    flex-flow: row;
+  }
+
+  .main__combined {
+    flex-flow: column;
+  }
+
+  .main__top,
+  .main__bottom {
+    flex-flow: row;
+  }
+
+  /* || COMMON CARD STYLES */
+  .card__test-title {
+    margin-bottom: 18px;
+  }
+
+  /* || CARD 1 */
+  .card1 {
+    background-position: 356px top;
+    width: 540px;
+    height: 282px;
+  }
+
+  .card1 .card__test-title {
+    margin-bottom: 18px;
+  }
+
+  /* || CARD 2 */
+  .card2 {
+    width: 255px;
+    height: 282px;
+  }
+
+  /* || CARD 3 */
+  .card3 {
+    width: 255px;
+    height: 266px;
+    padding: 26px 32px;
+  }
+
+  /* || CARD 4 */
+  .card4 {
+    width: 540px;
+    height: 266px;
+    padding: 26px 32px;
+  }
+
+  /* || CARD 5 */
+  .card5 {
+    width: 255px;
+    height: 572px;
+    padding: 26px 32px;
+  }
+
+  .card5 .card__test-title {
+    margin-bottom: 24px;
+  }
+}
