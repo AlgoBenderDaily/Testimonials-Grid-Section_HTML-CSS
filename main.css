@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* || REST */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+:root {
+  /* COLORS */
+  --BODY-BG: #ecf2f8;
+
+  /* TYPOGRAPHY */
+  --FF: "Barlow Semi Condensed", sans-serif;
+}
+
+/* || UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.responsive-image {
+  display: none;
+}
+
+/* MOBILE FIRST DESIGN */
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  display: grid;
+  place-content: center;
+  background-color: var(--BODY-BG);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: normal;
+}
+
+/* || MAIN */
+.main {
+  margin: 71px 24px;
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+.main__top,
+.main__bottom,
+.main__right,
+.main__combined {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
+}
+
+/* || COMMON CARD STYLES */
+.main__card {
+  width: 327px;
+  border-radius: 8px;
+  padding: 26px 32px 32px 32px;
+}
+
+.card__avatar-name {
+  display: flex;
+  flex-flow: row;
+  gap: 17px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.avatar {
+  width: 28px;
+  height: auto;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+
+.name__fullname {
+  font: 500 13px/13px var(--FF);
+}
+
+.name__verify {
+  font: 500 11px/11px var(--FF);
+  opacity: 50%;
+}
+
+.card__test-title {
+  font: 600 20px / normal var(--FF);
+  margin-bottom: 16px;
+}
+
+.card__test-story {
+  font: 500 13px/18px var(--FF);
+  opacity: 70%;
+}
+
+/* || SPECIFIC CARD STYLES */
+
+/* General styles for cards with shadows */
+.card-with-shadow {
+  box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.2474);
+}
+
+/* General styles for avatars with a purple border */
+.avatar-with-purple-border {
+  border: 2px solid #a775f1;
+  border-radius: 50%;
+}
+
+/* || CARD 1 */
+.card1 {
+  background-color: #733fc8;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-size: 104px 102px;
+  background-position: 199px top;
+  height: 444px;
+}
+
+.card1 .name__fullname,
+.card1 .name__verify,
+.card1 .card__test-title {
+  color: white;
+}
+
+.card1 .card__test-title {
+  margin-bottom: 40px;
+}
+
+.card1 .card__test-story {
+  color: #cfcfcf;
+}
+
+/* || CARD 2 */
+.card2 {
+  background-color: #48556a;
+  height: 240px;
+}
+
+.card2 .name__fullname,
+.card2 .name__verify,
+.card2 .card__test-title,
+.card2 .card__test-story {
+  color: white;
+}
+
+/* || CARD 3 */
+.card3 {
+  background-color: white;
+  height: 222px;
+}
+
+.card3 .name__fullname,
+.card3 .name__verify,
+.card3 .card__test-title,
+.card3 .card__test-story {
+  color: #48556a;
+}
+
+/* || CARD 4 */
+.card4 {
+  background-color: #19202d;
+  height: 384px;
+}
+
+.card4 .name__fullname,
+.card4 .name__verify,
+.card4 .card__test-story {
+  color: white;
+}
+
+.card4 .card__test-title {
+  color: #ecf2f8;
+}
+
+/* || CARD 5 */
+.card5 {
+  background-color: #fff;
+  height: 438px;
+}
+
+.card5 .name__fullname,
+.card5 .name__verify,
+.card5 .card__test-title,
+.card5 .card__test-story {
+  color: #48556a;
+}
+
+.card5 .name__fullname {
+  color: #48556a;
+}
+
+.card5 .name__verify {
+  color: #48556a;
+  opacity: 50%;
+}
+
+.card5 .card__test-title {
+  color: #48556a;
+}
+
+.card5 .card__test-story {
+  color: #48556a;
+  opacity: 70%;
+}
